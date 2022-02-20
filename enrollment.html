@@ -1,0 +1,616 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HOLY SPIRIT NATIONAL HIGH SCHOOL</title>
+    <link rel="Icon.ico" href="10398850_198073830672_8355175_n.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image:url("241278362_1269994193449521_294289653706039378_n.png");
+        background-repeat:no-repeat;
+        background-attachment: fixed;
+            font-family:Verdana;
+            text-align:center;
+      }
+
+    .topnav {
+      overflow: hidden;
+      background-color:#0A9618;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #000000;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    h2{
+      font-family: 'Oswald', sans-serif;
+      font-size:40px;
+      text-align:center;
+      color:rgb(15, 126, 15);
+
+    }
+    span>p{text-align:center;margin-top:0px;margin-bottom:5px;font-family: 'Roboto', sans-serif;font-size:20px;}
+    .topnav a:hover {
+      background-color: #52c917;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #52c917;
+      color: black;
+    }
+    .img1{
+      position:absolute;
+      width:100%;
+      height:500px;
+      background-color:rgba(0,0,0, 0.5);
+    }
+    .img1>img{
+      height:500px;
+      width:100%;
+    }
+    #logo{
+      float:left;
+      width: 120px;
+      height:120px;
+    }
+    h3{
+        color:white;
+    }
+    footer{
+      display:block;
+      background-image:linear-gradient(to right,#0A9618,#52c917);
+      height:122px;
+    }
+    footer>p{
+      text-align:center;
+    }
+    .topnav .icon {
+      display: none;
+    }
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      footer{
+        height:150px;
+      }
+      #logo{
+        height:150px;
+        
+      }
+      form{
+        width:70%;
+      }
+    }
+    label{
+        color:white;
+    }
+    /* Styling the Body element i.e. Color,Font, Alignment */
+    
+       /* Styling the Form (Color, Padding, Shadow) */
+       form {
+              background-color:rgba(0, 0, 0, 0.8);
+              max-width: 500px;
+              margin: 50px auto;
+              padding: 40px 40px;
+              box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+            }
+             
+       /* Styling form-control Class */
+       .form-control {
+                       text-align: left;
+                       margin-bottom: 25px;
+                       }
+       /* Styling form-control Label */
+       .form-control label {
+                       display: block;
+                       margin-bottom: 10px;
+                       }
+       /* Styling form-control input,select,text-area */
+       .form-control input,
+       .form-control select,
+       .form-control text-area {
+                       border: 1px solid #777;
+                       border-radius: 2px;
+                       font-family: Arial;
+                       padding: 10px;
+                       display: block;
+                       width: 95%;
+                       }     
+                                   
+       /* Styling form-control Radio button and  Checkbox */
+       .form-control input[type="radio"],
+       .form-control input[type="radio"]
+       {display: inline-block;
+        width: auto
+        }
+        
+       /* Styling Button */
+       button {
+                background-color: #05c46b;
+                border: 1px solid #777;
+                border-radius: 2px;
+                font-family: Arial;
+                font-size: 10px;
+                display: block;
+                width: 100%;
+                margin-top: 50px;
+                margin-bottom: 20px;
+               }
+    </style>
+  </head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="Facilities.html">Facilities</a>
+    <a href="awards.html">Achievements</a>
+    <a href="enrollment.html" class="active">Enrollment</a>
+    <a href="contacts.html">Contact Us</a>
+    <a href="about.html">About Us</a>
+   
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <!--Survey Form-->
+  <form id="form">  
+           
+    <h3>STUDENT'S INFORMATION</h3>
+    
+          <!--Details-->
+          <div class="form-control">
+          <label for="name" id="label-name">Student's Name</label>
+          <!--Input Type Text-->
+          <input type="text"
+                 id="name"
+                 placeholder="Enter your name"/>
+           </div>
+          
+          <div class="form-control">
+          <label for="address" id="label-address">Full Address</label>
+          <!--Input Type Text-->
+          <input type="text"    
+                 id="address"  
+                 placeholder="Enter your address"/>
+          </div>       
+                 
+          <div class="form-control">
+          <label for="email" id="label-email">Email</label>
+          <!--Input Type Text-->
+          <input type="text"
+                 id="email"
+                 placeholder="Enter your email"/>
+          </div>
+          
+          <div class="form-control">
+          <label for="lrn"  id="label-lrn">Learner Reference Number</label>
+          <!--Input Type Text-->
+          <input type="text"
+                  id="lrn"
+                  placeholder="Enter your Learner Reference Number"/>
+          </div>
+          
+          <div class="form-control">
+          <label for="birthday" id="label-birthday">Birthday (mm/dd/yy)</label>
+          <!--Input Type Text-->
+          <input type="text"
+                  id="birthday"
+                  placeholder="Enter your Birthday"/>
+           </div>
+           
+           <div class="form-control">
+           <label for="gender" id="label-gender">Gender</label>
+           <!--Input Type Text-->
+           <input type="text"
+                  id="gender"
+                  placeholder="Enter your Gender"/>
+           </div>
+                  
+          <div class="form-control">
+          <label for="age" id="label-age">Age</label>
+          <!--Input Type Text-->
+          <input type="text"
+                 id="age"
+                 placeholder="Enter your age"/>
+          </div>
+          
+          <div class="form-control">
+          <label for="contact number" id="label-contact number">Student's Contact Number</label>
+           <!--Input Type Text-->
+           <input type="text"
+                   id="contact number"
+                   placeholder="Enter your Contact Number"/>
+    <br>
+    <label>What type of distance learning modality do you prefer?</label>
+          <!--Input Type Radio Button-->
+          <div class="form-control">
+              <label>
+          <input type="radio"
+                 id="recommed-1"
+                 name="recommed">  Online Learning</input></label>
+    </div>
+          <div class="form-control">
+              <label>
+          <input type="radio"
+                  id="recommed-1"
+                  name="recommed">Digitalized Modular</input></label>
+    </div> 
+    <br>   
+          
+          <div class="form-control">
+          <label>Grade Level to Enroll:</label>      
+          <!--Input Type Radio Button-->
+                 
+          <label for="recommed-7">
+          <input type="radio"
+                 id="recommed-7"
+                 name="recommed" onclick="f3(this)">Grade 7</input></label>
+                 
+          <label for="recommed-8">
+          <input type="radio"
+                 id="recommed-8"
+                 name="recommed" onclick="f3(this)">Grade 8</input></label>
+                 
+          <label for="recommed-9">
+          <input type="radio"
+                 id="recommed-9"
+                 name="recommed" onclick="f3(this)">Grade 9</input></label>
+                 
+          <label for="recommed-10">
+          <input type="radio"
+                 id="recommed-10"
+                 name="recommed" onclick="f3(this)">Grade 10</input></label>
+           <label for="recommed-11">
+           <input type="radio"
+                 id="recommed-11"
+                 name="recommed" onclick="f1(this)">Grade 11</input></label>
+          
+          <label for="html"></label><br>
+          <select id="DDL"  disabled="disabled">
+          <option value=""  selected Disabled >--Grade 11--</option>
+                  <option>HUMMS</option>
+                  <option>STEM</option>
+                  <option>GAS</option>
+                  <option>TVL</option>
+           </select>
+    <br> 
+          <label for="recommed-12">
+          <input type="radio"
+                 id="recommed-12"
+                 name="recommed" onclick="f2(this)">Grade 12</input></label>
+           <select id="DDL2" disabled="disabled">
+                  <option value=""  selected Disabled>--Grade 12--</option>
+                  <option >HUMMS</option>
+                  <option >STEM</option>
+                  <option >GAS</option>
+                  <option >TVL</option>
+              </select>
+    
+    <br>            
+    <h3>STUDENT'S MEDICAL INFORMATION</h3>
+    <label>Does your child have a life-threatening health condition?</label>
+          <!--Input Type Radio Button-->
+          <label for="recommend-1">
+          <input type="radio"
+                   id="recommed-1"
+                   name="recommed">Yes</input></label>
+                                  
+          <label for="recommed-2">
+          <input type="radio"
+                  id="recommed-2"
+                  name="recommed">No</input></label>
+                  
+    <label>If yes, please explain:
+           <div class="form-control">
+           <label for="comment"></label>
+           <!--Multi-line Text Input Control-->
+           <textarea name="comment" id="comment" cols="40"
+                     placeholder=""></textarea>
+    <br>
+    <br>
+    <label>Does your child need medication at school?</label>
+           <!--Input Type Radio Button-->
+           <label for="recommed-1">
+           <input type="radio"           
+                   id="recommed-1"
+                   name="recommed">Yes</input></label>
+                   
+           <label for="recommed-2">
+           <input type="radio"       
+                   id="recommed-2"
+                   name="recommed">No</input></label>
+                   
+    <label>If yes, please explain:</label>
+           <div class="form-control">
+           <label type="comment"></label>
+           <!--Multi-line Text Input Control-->
+           <textarea name="comment" id="comment" cols="40"   
+                     placeholder=""></textarea>
+    <br>
+    <br>
+    <label>Does your child have any other medical issues of which we need to be aware?</label>
+           <!--Input Type Radio Buttonn-->
+           <label for="recommed-1">
+           <input type="radio"              
+                  id="recommed-1"
+                  name="recommed">Yes</input></label>
+                  
+            <label for="recommed-2">
+            <input type="radio"
+                   id="recommed-2"
+                   name="recommed">No</input></label>
+                   
+    <label>If yes, please explain:</label>
+             <div class="form-control">
+             <label type="comment"></label>
+             <!--Multi-line Text Input Control-->
+             <textarea name="comment"  id="comment"  cols="40"
+                     placeholder=""></textarea>
+    <br>
+    <br>
+    <label>Are you vaccinated?</label>
+           <!--Input Type Radio Button-->
+           <label for="recommed-1">
+           <input type="radio"
+                  id="recommed-1" 
+                  name="recommed">Yes</input></label>
+                                        
+           <label for="recommed-2">
+           <input type="radio" 
+                   id="recommed-1"                               
+                  name="recommed">No</input></label>
+    <br>               
+    <label>Do you agree to attend a Face-to-Face class this upcoming school year?</label>
+            <!--Input Type Radio Button-->
+            <label for="recommed-1">
+            <input type="radio" 
+                     id="recommed-1"
+                     name="recommed">Yes</input></label>
+                      
+            <label for="recommed-2">
+            <input type="radio"  
+                    id="recommed-2" 
+                    name="recommed">No</input></label>
+                    
+    <label>If no, please explain:</label>
+           <div class="form-control">
+           <label type="comment"></label>   
+           <!--Multi-line Text Input Control-->
+           <textarea name="comment"   id="comment"   cols="40"
+                 placeholder=""></textarea>                        
+    <br>                                 
+    <br>
+    <br>
+    <h3>PARENT'S INFORMATION</h3>
+     <!--Details-->
+          <div class="form-control">
+          <label for="Mother's Name" id="label-name">Mother's Name</label>
+          <!--Input Type Text-->
+          <input type="text"
+                  id="name"
+                  placeholder="Enter your name"/>
+          </div>
+          
+          <div class="form-control">
+          <label for="Occupation"  id="label-occupation">Occupation</label>
+          <!--Input Type Text-->
+          <input type="text"
+                 id="occupation"
+                 placeholder="Enter your occupation"/>
+          </div>
+          
+          <div class="form-control">
+          <label for="Work Phone" id="label-occupatiom">Work Phone</label>
+          <!--Input Type Text-->
+          <input type="text"      
+                 id="work phone"
+                 placeholder="Enter your work phone"/>
+          </div>
+          
+          <div class="form-control">
+          <label for="Email" id="label-email">Email</label>
+          <!--Input Type Text-->
+          <input type="text"         
+                  id="email"
+                  placeholder="Enter your email"/>
+          </div>
+          
+          <div class="form-control">
+          <label for="Address" id="label-address">Address</label>
+          <!--Input Type Text-->
+          <input type="text"      
+                  id="address"
+                  placeholder="Enter your address"/>
+          </div>
+          
+          <div class="form-control">
+          <label for="Employer" id="label-employer">Employer</label>
+          <!--Input Type Text-->
+          <input type="text"
+                 id="employer"
+                 placeholder="Enter your employer"/>
+          </div>
+          
+          <div class="form-control">
+          <label for="Cellphone Number" id="label-cellphone">Cellphone Number</label>
+          <!--Input Type Text-->
+          <input type="text"      
+                  id="cellphone number"
+                  placeholder="Enter your cellphone number"/>
+          </div>
+       <br>
+       <br>
+       
+          <div class="form-control">
+          <label for="Father's Name" id="label-cellphone">Father's Name</label>
+          <!--Input Type Text-->
+          <input type="text"  
+                  id="father's name"
+                  placeholder="Enter your name"/>
+          </div>
+          
+          <div class="form-control">
+          <label for="Occupation" id="label-cellphone">Occupation</label>
+          <!--Input Type Text-->
+          <input type="text"
+                  id="occupation"
+                  placeholder="Enter your occupation"/>
+          </div>
+          
+          <div class="form-control">
+          <label for="Work Phone" id="label-work phone">Work Phone</label>
+          <!--Input Type Text-->
+          <input type="text"
+                 id="work phone"
+                 placeholder="Enter your work phone"/>
+          </div>         
+                 
+          <div class="form-control">
+          <label for="Email"  id="label-email">Email</label>
+          <!--Input Type Text-->
+          <input type="text"
+                  id="email"
+                 placeholder="Enter your email"/>
+          </div>
+          
+          <div class="form-control">
+          <label for="Address" id="label-address">Address</label>
+          <!--Input Type Text-->
+          <input type="text"
+                  id="address"
+                 placeholder="Enter your address"/>
+          </div>
+          
+          <div class="form-control">
+          <label for="Employer"  id="label-employer">Employer</label>
+          <!--Input Type Text-->
+          <input type="text"     
+                  id="employer"
+                  placeholder="Enter your employer"/>
+          </div>
+          
+          <div class="form-control">
+          <label for="Cellphone" id="label-employer">Cellphone</label>
+          <!--Input Type Text-->
+          <input type="text"
+                  id="cellphone"
+                  placeholder="Enter your Cellphone"/>
+          </div>
+     <br>
+    <label>Child lives with:</label>  
+                       
+          <!--Input Type Radio Button-->
+          <label for="recommed-1">
+          <input type="radio"      
+                 id="recommed-1"
+                 name="recommed">Both parents</input></label>
+                 
+          <label for="recommed-2">
+          <input type="radio"
+                 id="recommed-2"
+                 name="recommed">Mother</input></label>
+                 
+           <label for="recommed-3">
+           <input type="radio"
+                   id="recommed-3"
+                  name="recommed">Father</input></label>               
+    <label>Others:</label>                       
+         <div class="form-control">
+         <label for="comment"></label>    
+             
+         <!--Multi-line Text Input Control-->
+         <textarea name="comment" id="comment" cols="40"
+                   placeholder=""></textarea>
+    </div>  
+    <br>        
+    <label>Emergency Contact (other than parents)</label>
+          <div class="form-control">
+          <label for="comment"></label>
+          
+          <!--Multi-line Text Input Control-->
+          <textarea name="comment"  id="comment" cols="40"
+                    placeholder="Enter your Number"></textarea>
+    <br>                    
+    <br>           
+         <div class="form-control">
+         <label for="comment">Feedback, Questions and Suggestions</label>
+         <!--Multi-line Text Input Control-->
+         <textarea name="comment" id="comment" cols="40"
+                   placeholder=""></textarea>
+    </div>
+    
+         <!--Multi-line Text Input Control-->
+         <button type="submit" value="submit">SUBMIT</button>
+    </div>
+    
+    </form>
+   
+<script>
+function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+  x.className += " responsive";
+} else {
+  x.className = "topnav";
+}
+}
+function f1(chkddl){
+           var ddl=document.getElementById("DDL");
+           var ddl2=document.getElementById("DDL2");
+           ddl.disabled=chkddl.checked ? false:true;
+           ddl2.disabled=chkddl.checked ? true:false;
+           if(!ddl.disabled){
+               ddl.focus();
+           }
+       }
+       function f2(chkddl){
+           var ddl=document.getElementById("DDL2");
+           var ddl2=document.getElementById("DDL");
+           ddl.disabled=chkddl.checked ? false:true;
+           ddl2.disabled=chkddl.checked ? true:false;
+           if(!ddl.disabled){
+               ddl.focus();
+           }
+       }
+       function f3(chkddl){
+           var ddl=document.getElementById("DDL");
+           var ddl2=document.getElementById("DDL2");
+           ddl.disabled=chkddl.checked ? true:false;
+           ddl2.disabled=chkddl.checked ? true:false;
+       }
+</script>
+</body>
+
+</html>
